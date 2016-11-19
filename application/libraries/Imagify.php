@@ -9,7 +9,7 @@
 require APPPATH.'third_party/Imagify/class-imagify.php';
 class Imagify extends Imagify\Optimizer
 {
-    private $api_key = '2a4782c19c0524a763a07e2317f8a2ff266a1558';
+    private $api_key = '[API_KEY]';
     /**
      * Constructor
      * @param array $options Array de opciones
