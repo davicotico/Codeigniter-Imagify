@@ -14,14 +14,13 @@ class Imagify extends Imagify\Optimizer
      * Constructor
      * @param array $options Array de opciones
      */
-    public function __construct(array $options)
+    public function __construct(array $options = array())
     {
         $this->api_key = isset($options['api_key']) ? $options['api_key'] : $this->api_key;
         if ($this->api_key==='')
         {
             die("API KEY not found");
         }
-        $api_key = $options['api_key'];
-        parent::__construct($api_key);
+        parent::__construct($this->api_key);
     }
 }
